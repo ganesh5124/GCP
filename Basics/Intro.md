@@ -41,3 +41,19 @@ The problem statement we address in this article is:
 * In GCP, a region refers to a specific geographical area, such as the USA, where multiple zones exist. 
 * Zones are individual data centers within a region that are interconnected with low-latency links
 
+Hybrid Cloud 
+* A setup where we utilize a private cloud or own data  center with a public cloud (like GCP)
+
+Resource Hierarchy in GCP : This approach ensures better management, security, and scalability for all your cloud workloads
+* GCP organizes resources into a tiered hierarchy consisting of three primary levels: organizations, folders, and projects.
+
+## Organization:
+* The organization resource is at the top of the hierarchy and represents an entire company or legal entity. It serves as the root node for all subsequent resources.
+
+## Folders:
+Folders provide an optional layer of grouping below the organization level. They can be used to separate different legal entities, departments, or teams, thus establishing clear isolation boundaries.
+
+## Projects:
+Projects are the foundational level where you deploy your resources, including Kubernetes clusters, virtual machines (VMs), SQL databases, and more. Each project represents a unique workspace for your cloud workloads.
+
+* A common question arises: Can resources in one project interact with those in another? The answer is yes. Provided the projects belong to the same folder and organization, inter-project interactions are possible.
